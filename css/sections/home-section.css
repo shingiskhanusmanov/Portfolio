@@ -1,0 +1,159 @@
+.home-section {
+  /* position: relative; */
+
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.home-title,
+.home-subtitle,
+.home-description {
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.home-title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.home-description {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.home-images {
+  height: 400px;
+  position: relative;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base style for centered cards */
+.home-box-1,
+.home-box-2,
+.home-box-3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 210px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+.home-box-1 {
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-hover-dark);
+}
+
+.home-box-2 {
+  z-index: 2;
+  transform: translate(-50%, -50%) rotate(7deg);
+  background-color: white;
+}
+
+.home-box-3 {
+  z-index: 3;
+  transform: translate(-50%, -50%) rotate(14deg);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent-hover-dark), white 40%) 0%,
+    var(--accent-hover-dark) 100%
+  );
+}
+
+.home-images img {
+  position: absolute;
+  left: 51%;
+  top: -40%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 4;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.home-circle {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  border: 20px solid color-mix(in srgb, var(--accent-hover-dark) 70%, black);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+}
+
+.home-circle::after {
+  content: " ";
+  width: 90px;
+  height: 90px;
+  /* background-color: red; */
+  position: absolute;
+  mask-image: radial-gradient(circle, transparent 30px, #000 0);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+}
+
+.home-arrow {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  z-index: 20;
+  font-size: 20px;
+}
+
+#home__text {
+  color: white;
+}
+
+.home-text {
+  z-index: 20;
+  font-weight: 400;
+
+  position: absolute;
+  width: 90px;
+  height: 90px;
+
+  animation: rotate-text 8s linear infinite;
+}
+
+.home-text span {
+  position: absolute;
+  transform-origin: 0 65px;
+  left: 45px;
+  top: -20px;
+}
+
+/* CIRCULAR TEXT ROTATE */
+@keyframes rotate-text {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#home-typed {
+  color: var(--accent);
+}

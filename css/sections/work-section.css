@@ -1,0 +1,94 @@
+.work-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 60px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: orange; */
+}
+
+.work-title {
+  font-size: 44px;
+  text-align: center;
+}
+
+.work-title span {
+  color: var(--accent);
+}
+
+.card-wrapper {
+  width: 100%;
+  min-width: 0;
+  padding: 20px 10px 55px;
+  overflow: hidden;
+  --swiper-pagination-color: #e8b673;
+  --swiper-pagination-bullet-inactive-color: #fff;
+}
+
+.work-card {
+  /* height: auto; */
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 30px;
+
+  background:
+    radial-gradient(circle at 0% 0%, rgba(232, 182, 115, 0.5), transparent 65%),
+    linear-gradient(160deg, #6b4e2e 0%, #43301c 100%);
+}
+
+.work-link {
+  display: block;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.work-card img {
+  user-select: none;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.work-card:hover img {
+  transform: scale(1.1);
+}
+
+.work-num {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.work-project {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.work-project-description {
+  color: darkgrey;
+  overflow-wrap: break-word;
+}
+
+.work-project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  color: var(--accent);
+  font-size: 15px;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.work-project-link:hover {
+  gap: 12px;
+}
+
+/* aspect-ratio: 3/2  -  gives every image the same proportions. The height is calculated automatically from the width, so it scales correctly at any screen size */

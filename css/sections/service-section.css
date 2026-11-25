@@ -1,0 +1,137 @@
+.service-section {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  flex-direction: column;
+}
+
+.service-list {
+  width: 100%;
+}
+
+.service-title {
+  font-size: 48px;
+}
+
+.service-title span {
+  color: var(--accent);
+}
+
+.service-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  gap: 30px;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+.service-icon {
+  font-size: 35px;
+  color: var(--accent);
+}
+
+.service-name {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  flex: 1; /*tells the title to take up all the leftover space in the header row*/
+}
+
+.service-chevron {
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-open .service-chevron {
+  transform: rotate(180deg);
+}
+
+.service-open .service-content {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.service-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.service-content-inner {
+  min-height: 0;
+  overflow: hidden;
+  padding-left: 70px;
+}
+
+.service-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-tags li {
+  padding: 10px 15px;
+  border: 2px solid var(--accent);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-tags li:hover {
+  transform: scale(1.03);
+}
+
+.service-description {
+  margin: 20px 0 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 540px) {
+  .service-title {
+    font-size: 36px;
+  }
+
+  .service-header {
+    gap: 16px;
+  }
+
+  .service-icon {
+    font-size: 28px;
+  }
+
+  .service-name {
+    font-size: 22px;
+  }
+
+  .service-content-inner {
+    padding-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-content,
+  .service-chevron {
+    transition: none;
+  }
+}

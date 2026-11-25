@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== Linking SwiperJS CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav-container">
+        <a class="nav-logo" href="#">Shingiskhan</a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li>
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#works" class="nav-link">Works</a>
+            </li>
+
+            <li>
+              <a href="#my-services" class="nav-link">My Services</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav-contact">Contact me</a>
+            </li>
+          </ul>
+
+          <button class="nav-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <button class="nav-toggle">
+          <ion-icon name="reorder-four-outline"></ion-icon>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME SECTION -->
+      <section class="home-section" id="home">
+        <div class="home-container container grid" data-aos="fade-up">
+          <h3 class="home-subtitle">
+            Hi, I'm Shingiskhan — a web developer based in Kazakhstan
+          </h3>
+
+          <h1 class="home-title" data-aos="fade-up" data-aos-delay="250">
+            Creative Web Designer & <br />
+            <span id="home-typed">Web Developer</span>
+          </h1>
+
+          <p class="home-description" data-aos="fade-up" data-aos-delay="300">
+            I create responsive, accessible, and results-focused digital
+            experiences.
+          </p>
+
+          <div class="home-images" data-aos="fade-up" data-aos-delay="250">
+            <div class="home-box-1"></div>
+            <div class="home-box-2"></div>
+            <div class="home-box-3"></div>
+
+            <img src="assets/me.png" class="home-img" />
+
+            <div class="home-circle">
+              <span class="home-text" id="home__text">
+                EXPLORE - MORE - LET'S -
+              </span>
+
+              <a href="#about" class="home-arrow">
+                <ion-icon name="arrow-down-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-container grid">
+          <h3 class="about-title" data-aos="fade-up" data-aos-delay="250">
+            I specialize in <span>web design</span> and
+            <span>development</span>, combining practical problem-solving with
+            clean, thoughtful execution.
+          </h3>
+
+          <div class="about-info" data-aos="fade-up" data-aos-delay="250">
+            <p class="about-description">
+              Explore my projects to see my approach to development, or get in
+              touch to discuss a collaboration.
+            </p>
+
+            <a
+              href="#contact"
+              class="about-button"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              >Contact me
+              <ion-icon
+                name="arrow-forward-outline"
+                class="about-icon"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section" id="works">
+        <h2 class="work-title" data-aos="fade-up" data-aos-delay="400">
+          View My <span>Work</span>
+        </h2>
+
+        <div
+          class="card-wrapper swiper"
+          data-aos="fade-up"
+          data-aos-delay="250"
+        >
+          <div class="swiper-wrapper">
+            <article class="work-card swiper-slide">
+              <a
+                href="https://github.com/shingiskhanusmanov/Chrome-Extension"
+                class="work-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Jinaq Chrome Extension"
+              >
+                <img
+                  src="assets/projects/chrome-extension.png"
+                  alt="Jinaq Chrome extension icon"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-data">
+                <h3 class="work-num">01</h3>
+                <h4 class="work-project">Jinaq Chrome Extension</h4>
+                <p class="work-project-description">
+                  A Chrome extension for saving, organizing, and quickly copying
+                  web links.
+                </p>
+                <a
+                  class="work-project-link"
+                  href="../CHROME%20-%20Extension/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open project
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+            </article>
+
+            <article class="work-card swiper-slide">
+              <a
+                href="redstore-sooty-eight.vercel.app"
+                class="work-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open RedStore online store"
+              >
+                <img
+                  src="assets/projects/redstore.jpg"
+                  alt="RedStore activewear collection"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-data">
+                <h3 class="work-num">02</h3>
+                <h4 class="work-project">RedStore Online Store</h4>
+                <p class="work-project-description">
+                  A responsive sportswear storefront featuring product browsing,
+                  category filters, wishlists, and shopping-bag functionality.
+                </p>
+                <a
+                  class="work-project-link"
+                  href="redstore-sooty-eight.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open project
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+            </article>
+
+            <article class="work-card swiper-slide">
+              <a
+                href="sushi-man-five.vercel.app"
+                class="work-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open SushiMan restaurant website"
+              >
+                <img
+                  src="assets/projects/sushiman.png"
+                  alt="SushiMan Japanese cuisine"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-data">
+                <h3 class="work-num">03</h3>
+                <h4 class="work-project">SushiMan Restaurant Website</h4>
+                <p class="work-project-description">
+                  A responsive Japanese restaurant website showcasing the menu,
+                  services, and brand story.
+                </p>
+                <a
+                  class="work-project-link"
+                  href="sushi-man-five.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open project
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+            </article>
+
+            <article class="work-card swiper-slide">
+              <a
+                href="okadzaki-menu.vercel.app"
+                class="work-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Okadzaki Menu staff training app"
+              >
+                <img
+                  src="assets/projects/okadzaki-menu.jpeg"
+                  alt="Okadzaki Menu sushi dish"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="work-data">
+                <h3 class="work-num">04</h3>
+                <h4 class="work-project">Okadzaki Menu Training App</h4>
+                <p class="work-project-description">
+                  A staff-training application that supports menu learning and
+                  validates knowledge through interactive quizzes.
+                </p>
+                <a
+                  class="work-project-link"
+                  href="okadzaki-menu.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Open project
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="service-section" id="my-services">
+        <h2 class="service-title" data-aos="fade-up">
+          <span>My</span> Services
+        </h2>
+
+        <div class="service-list">
+          <article
+            class="service-item service-open"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <button class="service-header" aria-expanded="true">
+              <ion-icon
+                name="code-slash-outline"
+                class="service-icon"
+              ></ion-icon>
+
+              <h3 class="service-name">Web Developer</h3>
+
+              <ion-icon
+                name="chevron-down-outline"
+                class="service-chevron"
+              ></ion-icon>
+            </button>
+
+            <div class="service-content">
+              <div class="service-content-inner">
+                <p class="service-description">
+                  I develop responsive, high-quality websites with intuitive
+                  layouts, reusable components, and attention to performance and
+                  usability.
+                </p>
+                <ul class="service-tags">
+                  <li>Web development</li>
+                  <li>Web performance</li>
+                  <li>Database Integration</li>
+                  <li>Basic SEO</li>
+                  <li>UI Design</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-aos="fade-up" data-aos-delay="200">
+            <button class="service-header" aria-expanded="false">
+              <ion-icon name="server-outline" class="service-icon"></ion-icon>
+
+              <h3 class="service-name">Backend Developer</h3>
+
+              <ion-icon
+                name="chevron-down-outline"
+                class="service-chevron"
+              ></ion-icon>
+            </button>
+
+            <div class="service-content">
+              <div class="service-content-inner">
+                <p class="service-description">
+                  I build and integrate server-side functionality, databases,
+                  and data-driven features with a focus on reliability and
+                  maintainability.
+                </p>
+                <ul class="service-tags">
+                  <li>API Development</li>
+                  <li>Server-Side Logic</li>
+                  <li>Database Design</li>
+                  <li>Authentication</li>
+                  <li>Data Management</li>
+                  <li>Integration</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <h2 class="skills-title" data-aos="fade-up">My <span>Skills</span></h2>
+        <p class="skills-description" data-aos="fade-up">
+          A growing technical skill set developed through continuous study,
+          hands-on projects, and consistent practical experience.
+        </p>
+
+        <div class="skills-list">
+          <article class="skills-card" data-aos="fade-up">
+            <div class="skills-head">
+              <ion-icon name="browsers-outline" class="skills-icon"></ion-icon>
+              <h3 class="skills-name">Frontend</h3>
+            </div>
+            <ul class="skills-items">
+              <li><i class="devicon-html5-plain colored"></i>HTML</li>
+              <li><i class="devicon-css3-plain colored"></i>CSS</li>
+              <li>
+                <i class="devicon-javascript-plain colored"></i>JavaScript
+              </li>
+              <li><i class="devicon-react-original colored"></i>React</li>
+
+              <li><i class="devicon-git-plain colored"></i>Git</li>
+              <li><i class="devicon-github-original skills-mono"></i>GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skills-card" data-aos="fade-up">
+            <div class="skills-head">
+              <ion-icon name="server-outline" class="skills-icon"></ion-icon>
+              <h3 class="skills-name">Backend</h3>
+            </div>
+            <ul class="skills-items">
+              <li>
+                <i class="devicon-postgresql-plain colored"></i>PostgreSQL
+              </li>
+              <li>
+                <i class="devicon-supabase-plain colored"></i>
+                Supabase
+              </li>
+              <li><i class="devicon-python-plain colored"></i>Python</li>
+            </ul>
+          </article>
+
+          <article class="skills-card" data-aos="fade-up">
+            <div class="skills-head">
+              <ion-icon name="server-outline" class="skills-icon"></ion-icon>
+              <h3 class="skills-name">Microsoft</h3>
+            </div>
+            <ul class="skills-tags">
+              <li>
+                <span class="skills-badge skills-word" aria-hidden="true"
+                  >W</span
+                >
+                <span>Word</span>
+              </li>
+              <li>
+                <span class="skills-badge skills-excel" aria-hidden="true"
+                  >X</span
+                >
+                <span>Excel</span>
+              </li>
+              <li>
+                <span class="skills-badge skills-powerpoint" aria-hidden="true"
+                  >P</span
+                >
+                <span>PowerPoint</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <h2 class="contact-title" data-aos="fade-up">
+          Let's <span>Work</span> Together
+        </h2>
+        <p class="contact-description" data-aos="fade-up">
+          Interested in working together? Send me a message to discuss your
+          project.
+        </p>
+        <ul class="contact-links" data-aos="fade-up">
+          <li>
+            <a href="mailto:shyngyzusmanov04@gmail.com"
+              ><ion-icon name="mail-outline"></ion-icon>Email</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Kistauboev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="logo-github"></ion-icon>GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/shingiskhanusmanov"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="logo-github"></ion-icon>GitHub 2</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://t.me/onlycareer"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><ion-icon name="paper-plane-outline"></ion-icon>Telegram</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      &copy; 2026 Shingiskhan. All rights reserved.
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        offset: 100,
+      });
+    </script>
+
+    <!-- TEXT ANIMATIONS STARTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+    <script>
+      const typedHome = new Typed("#home-typed", {
+        strings: ["Web Developer", "Frontend Developer", "UX/UI Designer"],
+        typeSpeed: 50,
+        backSpeed: 30,
+        startDelay: 500,
+        backDelay: 1500,
+        loop: true,
+      });
+    </script>
+    <!-- TEXT ANIMATION ENDS HERE -->
+
+    <!-- ===== Linking SwiperJS CSS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
